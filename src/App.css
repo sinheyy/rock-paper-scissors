@@ -1,0 +1,16 @@
+.box{
+  border: 5px groove black;
+  width: 500px;
+  text-align: center;
+  margin: 5px;
+}
+
+.item-img{
+  width: 400px;
+  height: 300px;
+}
+
+.main{
+  display: flex;              /*가로정렬*/
+  justify-content: center;    /*박스 중앙 위치로*/
+}
