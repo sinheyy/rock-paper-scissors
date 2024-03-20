@@ -1,16 +1,94 @@
-.box{
+.box {
   border: 5px groove black;
-  width: 500px;
+  width: 300px;
   text-align: center;
   margin: 5px;
 }
 
-.item-img{
-  width: 400px;
-  height: 300px;
+.item-img {
+  width: 100px;
+  height: 100px;
 }
 
-.main{
+.main {
   display: flex;              /*가로정렬*/
   justify-content: center;    /*박스 중앙 위치로*/
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.win {
+  border: 5px groove #2E2E2E;
+  color: #2E2E2E;
+  background-color: #FDECF9;
+}
+
+.lose {
+  border: 5px groove #2E2E2E;
+  color: #2E2E2E;
+  background-color: #C8C6C7;
+}
+
+.tie {
+  border: 5px groove #2E2E2E;
+  color: #2E2E2E;
+}
+
+.btn {
+  display: inline-flex;
+  color: #2E2E2E;
+  font-weight: bold;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  font-size: 1rem;
+
+  background: white;
+  border: 1px solid #2E2E2E;
+
+  margin: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.btn2 {
+  display: inline-flex;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  font-size: 1rem;
+
+  background: #2E2E2E;
+
+  margin: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  font-family: "Orbit", sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  /*border: 1px solid black;*/
+  font-family: "Orbit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.2rem;
 }
