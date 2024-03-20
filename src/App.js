@@ -21,12 +21,16 @@ const choice = {
   paper: {
     name: "Paper",
     img: "https://cdn-icons-png.flaticon.com/128/12355/12355903.png"
+  },
+  default: {
+    name: "default",
+    img: "https://cdn-icons-png.flaticon.com/128/25/25333.png"
   }
 }
 
 function App() {
-  const [userSelect, setUserSelect] = useState(null);           // 사용자 선택을 위한 useState
-  const [computerSelect, setComputerSelect] = useState(null);   // 컴퓨터 선택을 위한 useState
+  const [userSelect, setUserSelect] = useState(choice.default);           // 사용자 선택을 위한 useState
+  const [computerSelect, setComputerSelect] = useState(choice.default);   // 컴퓨터 선택을 위한 useState
   const [result, setResult] = useState("");                     // 승패 결과
   const [userScore, setUserScore] = useState(0);                // user 점수
   const [comScore, setComScore] = useState(0);                   // com 점수
@@ -101,7 +105,7 @@ function App() {
   const randomChoice = () => {
     let itemArray = Object.keys(choice);  // choice 객체를 배열화 - 객체의 key 값만 뽑아서 array로 바꿔줌
     console.log("item array", itemArray);
-    let randomItem = Math.floor(Math.random() * itemArray.length);  // 0~3 random 발생
+    let randomItem = Math.floor(Math.random() * (itemArray.length - 1));  // 0~3 random 발생
     let final = itemArray[randomItem];    // random 하게 rock/paper/scissors 중 고름
     return choice[final];                 // 객체 반환
   }
@@ -128,6 +132,10 @@ function App() {
     setUserSelect(null);
     setComputerSelect(null);
     setResult("");
+
+    // default로 변경
+    setUserSelect(choice.default);
+    setComputerSelect(choice.default);
   }
 
   return (
