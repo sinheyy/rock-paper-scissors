@@ -21,10 +21,6 @@ const Box = (props) => {
 
     result2 = result.toUpperCase();
   }
-  // 결과가 빈 값이면
-  else{
-
-  }
 
   return (
     <div className={`box ${result}`}>
