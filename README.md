@@ -1,7 +1,10 @@
 # Rock-Paper-Scissors
 Let's play <b>Rock Paper Scissors Game</b>!  
 link : [gawe-bawe-bo.netlify.app/](https://gawe-bawe-bo.netlify.app/)  
-<br/><br/>
+<br/>
+App.js, Box.js - Function Component.VER  
+AppClass.js, BoxClass.js - Class Component.VER  
+<br/>
 ## 1) 시작 화면 및 '다시' 버튼 누를 시 화면
 ![](https://github.com/sinheyy/rock-paper-scissors/assets/163747140/2ae02491-3469-4b1b-a266-34f935612503)  
 ## 2) 게임 화면 - WIN/LOSE
